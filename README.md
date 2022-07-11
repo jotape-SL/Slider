@@ -1,0 +1,2 @@
+# Slider
+ Info slider
