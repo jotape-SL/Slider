@@ -15,6 +15,13 @@ function App() {
       setIndex(0);
     }
   }, [index, people]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => clearInterval(slider);
+  }, [index]);
   return (
     <section className='sectoion'>
       <div className='title'>
